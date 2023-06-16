@@ -21,9 +21,14 @@ body{
     text-align: center;
     transition: transform 0.5s ease-in-out;
     transform-style: preserve-3d;
+    cursor: pointer;
 }
 
-.cards .flipCard:hover .flipCardInner{
+#click{
+    display: none;
+}
+
+#click:checked ~ .flipCard .flipCardInner{
     transform: rotateY(180deg);
 }
 
