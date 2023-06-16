@@ -7,14 +7,16 @@ body{
     gap: 5px;
 }
 
-.cards .flipCard{
+.cards .flipCard1,
+.cards .flipCard2{
     background-color: transparent;
     width: 300px;
     height: 300px;
     perspective: 1000px;
 }
 
-.cards .flipCard .flipCardInner{
+.cards .flipCard1 .flipCardInner,
+.cards .flipCard2 .flipCardInner{
     position: relative;
     width: 100%;
     height: 100%;
@@ -24,33 +26,42 @@ body{
     cursor: pointer;
 }
 
-#click{
+input{
     display: none;
 }
 
-#click:checked ~ .flipCard .flipCardInner{
+#click1:checked ~ .flipCard1 .flipCardInner{
     transform: rotateY(180deg);
 }
 
-.cards .flipCard .flipCardFront,
-.cards .flipCard .flipCardBack{
+#click2:checked ~ .flipCard2 .flipCardInner{
+    transform: rotateY(180deg);
+}
+
+.cards .flipCard1 .flipCardFront,
+.cards .flipCard1 .flipCardBack,
+.cards .flipCard2 .flipCardFront,
+.cards .flipCard2 .flipCardBack{
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
 
-.cards .flipCard .flipCardFront{
+.cards .flipCard1 .flipCardFront,
+.cards .flipCard2 .flipCardFront{
     background-color: #bbb;
     color: black;
 }
 
-.cards .flipCard .flipCardFront img{
+.cards .flipCard1 .flipCardFront img,
+.cards .flipCard2 .flipCardFront img{
     width: 100%;
     height: 100%;
 }
 
-.cards .flipCard .flipCardBack{
+.cards .flipCard1 .flipCardBack,
+.cards .flipCard2 .flipCardBack{
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
