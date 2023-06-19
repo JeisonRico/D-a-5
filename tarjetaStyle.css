@@ -17,10 +17,18 @@ body{
 .cards1 .flipCard2,
 .cards1 .flipCard3,
 .cards1 .flipCard4,
+.cards2 .flipCard5,
+.cards2 .flipCard6,
+.cards2 .flipCard7,
+.cards2 .flipCard8,
 .cards3 .flipCard9,
 .cards3 .flipCard10,
+.cards3 .flipCard11,
+.cards3 .flipCard12,
 .cards4 .flipCard13,
-.cards4 .flipCard14{
+.cards4 .flipCard14,
+.cards4 .flipCard15,
+.cards4 .flipCard16{
     background-color: transparent;
     width: 200px;
     height: 300px;
@@ -31,10 +39,18 @@ body{
 .cards1 .flipCard2 .flipCardInner,
 .cards1 .flipCard3 .flipCardInner,
 .cards1 .flipCard4 .flipCardInner,
+.cards2 .flipCard5 .flipCardInner,
+.cards2 .flipCard6 .flipCardInner,
+.cards2 .flipCard7 .flipCardInner,
+.cards2 .flipCard8 .flipCardInner,
 .cards3 .flipCard9 .flipCardInner,
 .cards3 .flipCard10 .flipCardInner,
+.cards3 .flipCard11 .flipCardInner,
+.cards3 .flipCard12 .flipCardInner,
 .cards4 .flipCard13 .flipCardInner,
-.cards4 .flipCard14 .flipCardInner{
+.cards4 .flipCard14 .flipCardInner,
+.cards4 .flipCard15 .flipCardInner,
+.cards4 .flipCard16 .flipCardInner{
     position: relative;
     width: 100%;
     height: 100%;
@@ -45,15 +61,27 @@ body{
 }
 
 input{
-    display: none;
+    /* display: none; */
 }
 
 #click1:checked ~ .flipCard1 .flipCardInner,
 #click2:checked ~ .flipCard2 .flipCardInner,
 #click3:checked ~ .flipCard3 .flipCardInner,
-#click4:checked ~ .flipCard4 .flipCardInner{
+#click4:checked ~ .flipCard4 .flipCardInner,
+#click5:checked ~ .flipCard5 .flipCardInner,
+#click6:checked ~ .flipCard6 .flipCardInner,
+#click7:checked ~ .flipCard7 .flipCardInner,
+#click8:checked ~ .flipCard8 .flipCardInner,
+#click9:checked ~ .flipCard9 .flipCardInner,
+#click10:checked ~ .flipCard10 .flipCardInner,
+#click11:checked ~ .flipCard11 .flipCardInner,
+#click12:checked ~ .flipCard12 .flipCardInner,
+#click13:checked ~ .flipCard13 .flipCardInner,
+#click14:checked ~ .flipCard14 .flipCardInner,
+#click15:checked ~ .flipCard15 .flipCardInner,
+#click16:checked ~ .flipCard16 .flipCardInner{
     transform: rotateY(180deg);
-}
+} 
 
 .cards1 .flipCard1 .flipCardFront,
 .cards1 .flipCard1 .flipCardBack,
@@ -63,40 +91,52 @@ input{
 .cards1 .flipCard3 .flipCardBack,
 .cards1 .flipCard4 .flipCardFront,
 .cards1 .flipCard4 .flipCardBack,
+.cards2 .flipCard5 .flipCardFront,
+.cards2 .flipCard5 .flipCardBack,
+.cards2 .flipCard6 .flipCardFront,
+.cards2 .flipCard6 .flipCardBack,
+.cards2 .flipCard7 .flipCardFront,
+.cards2 .flipCard7 .flipCardBack,
+.cards2 .flipCard8 .flipCardFront,
+.cards2 .flipCard8 .flipCardBack,
 .cards3 .flipCard9 .flipCardFront,
 .cards3 .flipCard9 .flipCardBack,
 .cards3 .flipCard10 .flipCardFront,
 .cards3 .flipCard10 .flipCardBack,
+.cards3 .flipCard11 .flipCardFront,
+.cards3 .flipCard11 .flipCardBack,
+.cards3 .flipCard12 .flipCardFront,
+.cards3 .flipCard12 .flipCardBack,
 .cards4 .flipCard13 .flipCardFront,
 .cards4 .flipCard13 .flipCardBack,
 .cards4 .flipCard14 .flipCardFront,
-.cards4 .flipCard14 .flipCardBack{
+.cards4 .flipCard14 .flipCardBack,
+.cards4 .flipCard15 .flipCardFront,
+.cards4 .flipCard15 .flipCardBack,
+.cards4 .flipCard16 .flipCardFront,
+.cards4 .flipCard16 .flipCardBack{
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
 
-.cards1 .flipCard1 .flipCardFront,
-.cards1 .flipCard2 .flipCardFront,
-.cards1 .flipCard3 .flipCardFront,
-.cards1 .flipCard4 .flipCardFront,
-.cards3 .flipCard9 .flipCardFront,
-.cards3 .flipCard10 .flipCardFront,
-.cards4 .flipCard13 .flipCardFront,
-.cards4 .flipCard14 .flipCardFront{
-    background-color: #bbb;
-    color: black;
-}
-
 .cards1 .flipCard1 .flipCardFront img,
 .cards1 .flipCard2 .flipCardFront img,
 .cards1 .flipCard3 .flipCardFront img,
 .cards1 .flipCard4 .flipCardFront img,
+.cards2 .flipCard5 .flipCardFront img,
+.cards2 .flipCard6 .flipCardFront img,
+.cards2 .flipCard7 .flipCardFront img,
+.cards2 .flipCard8 .flipCardFront img,
 .cards3 .flipCard9 .flipCardFront img,
 .cards3 .flipCard10 .flipCardFront img,
+.cards3 .flipCard11 .flipCardFront img,
+.cards3 .flipCard12 .flipCardFront img,
 .cards4 .flipCard13 .flipCardFront img,
-.cards4 .flipCard14 .flipCardFront img{
+.cards4 .flipCard14 .flipCardFront img,
+.cards4 .flipCard15 .flipCardFront img,
+.cards4 .flipCard16 .flipCardFront img{
     width: 100%;
     height: 100%;
 }
@@ -105,10 +145,18 @@ input{
 .cards1 .flipCard2 .flipCardBack,
 .cards1 .flipCard3 .flipCardBack,
 .cards1 .flipCard4 .flipCardBack,
+.cards2 .flipCard5 .flipCardBack,
+.cards2 .flipCard6 .flipCardBack,
+.cards2 .flipCard7 .flipCardBack,
+.cards2 .flipCard8 .flipCardBack,
 .cards3 .flipCard9 .flipCardBack,
 .cards3 .flipCard10 .flipCardBack,
+.cards3 .flipCard11 .flipCardBack,
+.cards3 .flipCard12 .flipCardBack,
 .cards4 .flipCard13 .flipCardBack,
-.cards4 .flipCard14 .flipCardBack{
+.cards4 .flipCard14 .flipCardBack,
+.cards4 .flipCard15 .flipCardBack,
+.cards4 .flipCard16 .flipCardBack{
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
@@ -118,10 +166,20 @@ input{
 .cards1 .flipCard2 .flipCardBack img,
 .cards1 .flipCard3 .flipCardBack img,
 .cards1 .flipCard4 .flipCardBack img,
+.cards2 .flipCard5 .flipCardBack img,
+.cards2 .flipCard6 .flipCardBack img,
+.cards2 .flipCard7 .flipCardBack img,
+.cards2 .flipCard8 .flipCardBack img,
 .cards3 .flipCard9 .flipCardBack img,
 .cards3 .flipCard10 .flipCardBack img,
+.cards3 .flipCard11 .flipCardBack img,
+.cards3 .flipCard12 .flipCardBack img,
 .cards4 .flipCard13 .flipCardBack img,
-.cards4 .flipCard14 .flipCardBack img{
+.cards4 .flipCard14 .flipCardBack img,
+.cards4 .flipCard15 .flipCardBack img,
+.cards4 .flipCard16 .flipCardBack img{
     width: 100%;
     height: 100%;
 }
+
+/* Funcionalidad */
